@@ -43,7 +43,7 @@ void IRResolver::do_insert(const IRFatKey& fat_key)
         if (l != nullptr) {
             left.min_freq = l->min_freq;
             left.max_freq = intersection.min_freq - 1;
-            for (const auto& r : left.records) {
+            for (const auto& r : l->records) {
                 left.records.push_back(r);
             }
             do_insert(left);
@@ -51,7 +51,7 @@ void IRResolver::do_insert(const IRFatKey& fat_key)
         if (r != nullptr) {
             right.min_freq = intersection.max_freq + 1;
             right.max_freq = r->max_freq;
-            for (const auto& r : right.records) {
+            for (const auto& r : r->records) {
                 right.records.push_back(r);
             }
             do_insert(right);
@@ -59,6 +59,9 @@ void IRResolver::do_insert(const IRFatKey& fat_key)
         do_insert(intersection);
 
     } else {
+        if (fat_key.records.empty()) {
+            std::cout << "!!! " << fat_key.min_freq << " " << fat_key.max_freq << std::endl;
+        }
         auto ret = ir_set.insert(fat_key);
         if (!ret.second) {
                 std::cerr << "fat_key failed!\n";
