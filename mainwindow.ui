@@ -88,7 +88,7 @@
      <x>0</x>
      <y>0</y>
      <width>738</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuIRResolver">
@@ -105,19 +105,14 @@
    <property name="text">
     <string>Load</string>
    </property>
-   <property name="shortcut">
-    <string>L</string>
-   </property>
   </action>
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
-   </property>
-   <property name="shortcut">
-    <string>Q</string>
    </property>
   </action>
  </widget>
  <resources/>
  <connections/>
 </ui>
+
