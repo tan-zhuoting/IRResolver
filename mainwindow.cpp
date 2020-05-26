@@ -1,6 +1,7 @@
 #include <fstream>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QListWidgetItem>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -16,20 +17,28 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_horizontalSlider_valueChanged(int value)
+void MainWindow::find_and_show(int value)
 {
-    ui->spinBox->setValue(value);
+    ui->listWidget->clear();
     if (irr == nullptr) {
         return;
     }
+    auto recs = irr->find_records(value);
+    for (const auto& r : recs) {
+        new QListWidgetItem(r->c_str(), ui->listWidget);
+    }
+}
+
+void MainWindow::on_horizontalSlider_valueChanged(int value)
+{
+    ui->spinBox->setValue(value);
+    find_and_show(value);
 }
 
 void MainWindow::on_spinBox_valueChanged(int arg1)
 {
     ui->horizontalSlider->setValue(arg1);
-    if (irr == nullptr) {
-        return;
-    }
+    find_and_show(arg1);
 }
 
 void MainWindow::on_actionLoad_triggered()
@@ -44,6 +53,7 @@ void MainWindow::on_actionLoad_triggered()
         return;
     }
     irr = std::make_shared<IRResolver>();
+    ui->listWidget->clear();
     std::string line;
     while (std::getline(ifs, line)) {
         bool ret = irr->add_record(line);

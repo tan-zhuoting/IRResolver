@@ -26,6 +26,7 @@ private slots:
     void on_actionLoad_triggered();
 
 private:
+    void find_and_show(int value);
     Ui::MainWindow *ui;
 
     std::shared_ptr<IRResolver> irr;
