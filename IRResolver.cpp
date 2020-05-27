@@ -106,3 +106,4 @@ std::vector<std::shared_ptr<std::string>> IRResolver::find_records(unsigned freq
         return iter->records;
     }
 }
+

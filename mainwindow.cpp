@@ -1,6 +1,9 @@
 #include <fstream>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <fstream>
+#include <QFileDialog>
+#include <QMessageBox>
 #include <QListWidgetItem>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -25,7 +28,8 @@ void MainWindow::find_and_show(int value)
     }
     auto recs = irr->find_records(value);
     for (const auto& r : recs) {
-        new QListWidgetItem(r->c_str(), ui->listWidget);
+        auto item = new QListWidgetItem(r->c_str(), ui->listWidget);
+        item->setFlags(item->flags() | Qt::ItemIsEditable);
     }
 }
 
