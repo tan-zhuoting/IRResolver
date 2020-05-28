@@ -70,3 +70,8 @@ void MainWindow::on_actionLoad_triggered()
     msgbox.setText(QString("File ").append(filename).append(" successfully loaded."));
     msgbox.exec();
 }
+
+void MainWindow::on_actionQuit_triggered()
+{
+    this->close();
+}
