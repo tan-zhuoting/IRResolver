@@ -15,3 +15,6 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui
+
+DISTFILES += \
+    data.txt

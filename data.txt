@@ -1,0 +1,38 @@
+3640-3610(s, sh)    O–H stretch, free hydroxyl     alcohols, phenols
+3500-3200(s,b)      O–H stretch, H–bonded          alcohols, phenols
+3400-3250(m)        N–H stretch                    1°, 2° amines, amides
+3300-2500(m)        O–H stretch                    carboxylic acids
+3330-3270(n, s)     –C≡C–H: C–H stretch            alkynes (terminal)
+3100-3000(s)        C–H stretch                    aromatics
+3100-3000(m)        =C–H stretch                   alkenes
+3000-2850(m)        C–H stretch                    alkanes
+2830-2695(m)        H–C=O: C–H stretch             aldehydes
+2260-2210(v)        C≡N stretch                    nitriles
+2260-2100(w)        –C≡C–stretch                   alkynes
+1760-1665(s)        C=O stretch                    carbonyls (general)
+1760-1690(s)        C=O stretch                    carboxylic acids
+1750-1735(s)        C=O stretch                    esters, saturated aliphatic
+1740-1720(s)        C=O stretch                    aldehydes, saturated aliphatic
+1730-1715(s)        C=O stretch                    α,β–unsaturated esters
+1715(s)             C=O stretch                    ketones, saturated aliphatic
+1710-1665(s)        C=O stretch                    α,β–unsaturated aldehydes, ketones
+1680-1640(m)        –C=C– stretch                  alkenes
+1650-1580(m)        N–H bend                       1° amines
+1600-1585(m)        C–C stretch(in–ring)           aromatics
+1550-1475(s)        N–O asymmetric stretch         nitro compounds
+1500-1400(m)        C–C stretch (in–ring)          aromatics
+1470-1450(m)        C–H bend                       alkanes
+1370-1350(m)        C–H rock                       alkanes
+1360-1290(m)        N–O symmetric stretch          nitro compounds
+1335-1250(s)        C–N stretch                    aromatic amines
+1320-1000(s)        C–O stretch                    alcohols, carboxylic acids, esters, ethers
+1300-1150(m)        C–H wag (–CH2X)                alkyl halides
+1250-1020(m)        C–N stretch                    aliphatic amines
+1000-650(s)         =C–H bend                      alkenes
+950-910(m)          O–H bend                       carboxylic acids
+910-665(s,b)        N–H wag                        1°, 2° amines
+900-675(s)          C–H “oop”                      aromatics
+850-550(m)          C–Cl stretch                   alkyl halides
+725-720(m)          C–H rock                       alkanes
+700-610(b,s)        –C≡C–H: C–H bend               alkynes
+690-515(m)          C–Br stretch                   alkyl halides
