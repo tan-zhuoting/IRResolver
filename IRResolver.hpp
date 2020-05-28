@@ -38,3 +38,4 @@ private:
 
     std::set<IRFatKey, std::less<>> ir_set;
 };
+

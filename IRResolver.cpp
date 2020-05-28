@@ -16,7 +16,7 @@ void IRResolver::do_insert(const IRFatKey& fat_key)
     if (iter != ir_set.end()) {
         auto k(*iter);
         ir_set.erase(iter);
-        std::cout << "erased: " << k.min_freq << "-" << k.max_freq << "\n";
+        //std::cout << "erased: " << k.min_freq << "-" << k.max_freq << "\n";
         IRFatKey left, intersection, right;
         intersection.min_freq = (fat_key.min_freq < k.min_freq) ?
             k.min_freq : fat_key.min_freq;
@@ -60,7 +60,7 @@ void IRResolver::do_insert(const IRFatKey& fat_key)
 
     } else {
         if (fat_key.records.empty()) {
-            std::cout << "!!! " << fat_key.min_freq << " " << fat_key.max_freq << std::endl;
+            //std::cout << "!!! " << fat_key.min_freq << " " << fat_key.max_freq << std::endl;
         }
         auto ret = ir_set.insert(fat_key);
         if (!ret.second) {
@@ -69,7 +69,7 @@ void IRResolver::do_insert(const IRFatKey& fat_key)
                           << "fat_key.max = " << fat_key.max_freq << "\n";
                 exit(0);
         }
-        std::cout << "inserted: " << fat_key.min_freq << "-" << fat_key.max_freq << "\n";
+        //std::cout << "inserted: " << fat_key.min_freq << "-" << fat_key.max_freq << "\n";
     }
 }
 
